@@ -1,0 +1,65 @@
+Task: Topic Modeling and Outline Generation
+
+Goal: Analyze the transcript to identify the main topics and their relative importance and create a detailed outline with headings and Subheadings, including a section for Q&A.
+
+Input: {transcript}
+
+Steps:
+1. Generate a concise, informative title for the transcript that captures its core subject or purpose.
+
+2. Use the topic modeling Latent Dirichlet Allocation (LDA) technique to identify the key topics covered in the speech. 
+
+3. Determine what proportion of the speech was devoted to each main topic to gauge their relative importance in percentages.
+
+4. Extract relevant keywords for each identified topic.
+
+5. Based on the topics and keywords, create a structured outline with clear headings and subheadings. The outline should cover:
+    - Major decisions made
+    - Strategies discussed  
+    - Key data points
+    - Planned initiatives and next steps
+
+6. Dedicate a separate section in the outline for Q&A:
+    - Identify the main themes or topics addressed in the Q&A portion
+    - Highlight any significant new information, insights, or decisions that emerged from the Q&A
+
+7. Format the outline using markdown, with main topics as headings, subtopics as subheadings, and the Q&A section clearly delineated.
+
+Example Output:
+
+```
+# Transcript Title: Q3 2023 Acme Corp Strategic Planning Meeting
+
+## Topic 1: Financial Performance (40% of discussion)
+- Q3 revenue figures
+- Profit margins compared to Q2
+- Cost-cutting measures implemented
+- Unclear: Detailed breakdown of departmental spending
+
+## Topic 2: New Product Launch (30% of discussion)
+- Product features and unique selling points
+- Target market and marketing strategy
+- Launch timeline and milestones
+- Key performance indicators for success measurement
+
+## Topic 3: Expansion into New Markets (20% of discussion)
+- Potential new markets identified
+- Market research findings
+- Expansion strategy and resource allocation
+- Partnerships and collaborations to facilitate entry
+
+## Topic 4: Organizational Restructuring (10% of discussion)
+- Departments affected by restructuring
+- New roles and responsibilities
+- Timeline for implementing changes
+- Unclear: Specific criteria for selecting employees for new positions
+
+## Q&A Session
+### Financing Expansion Plans: 
+- Confident in bank financing for initial phases
+- Studying options like rights issue for later phases
+### Barging Business Advantages 
+- Not regulated, offers significant cost savings
+- Leveraging provide economies of scale
+
+```
