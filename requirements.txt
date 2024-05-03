@@ -1,0 +1,11 @@
+fastapi[all]
+openai-whisper
+pydub
+ffmpeg-python
+anthropic
+langchain
+langchain-anthropic
+langchain-community
+langchain-core
+langchain-text-splitters
+python-dotenv
