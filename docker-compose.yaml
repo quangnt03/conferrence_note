@@ -1,0 +1,23 @@
+version: '3.8'
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: fastapi_langchain
+    working_dir: /code
+    volumes:
+      - .:/code
+    expose:
+      - 8080
+    ports:
+      - "8080:8080"
+    command: ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8080", "--reload"]
+    develop:
+      watch:
+        - action: sync+restart
+          path: ./app
+          ignore:
+            - "__pycache__"
+        - action: rebuild
+          path: ./requirements.txt

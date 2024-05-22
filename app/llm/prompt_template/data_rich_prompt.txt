@@ -1,0 +1,42 @@
+Second Prompt: Data-Rich Conference Report Generation
+
+Input: {outline}
+
+Goal: Using the outline provided in the input section, create a data-rich report that covers all the important aspects of the company conference, with a strong focus on including as many relevant statistics, numerical data, and key figures as possible. The report should provide extensive context, data, statistics, quotes, and supporting information within each section to give readers a comprehensive understanding of the conference. The report should cater to the interests of investors, shareholders, and portfolio managers, and present information in an easily digestible format.
+
+Steps:
+1. Begin with a title page that includes the report title (as determined in the first prompt), date, and any other relevant information.
+
+2. Organize the main body of the report according to the outline structure, with main topics as headings and subtopics as subheadings.
+
+3. For each main topic and subtopic:
+   - Provide a highly detailed account of the key points, decisions, and data related to the topic, with a strong emphasis on including specific quantitative data, financial metrics, statistics, key performance indicators, and relevant quotes from the transcript.
+   - Use subheadings to break down complex topics into smaller, more manageable sections, making it easier for readers to navigate and understand the information.
+   - Present statistics, numerical data, and key figures using lists, bullet points, or tables to enhance readability and make the information more visually appealing.
+   - Include as many relevant statistics and numerical data points as possible, such as percentages, growth rates, market shares, revenue figures, profit margins, and more.
+   - Analyze and interpret the data to provide insights into the company's performance, market position, and future prospects, citing specific figures and percentages where applicable.
+   - Discuss the potential implications, impact, or consequences of key decisions, strategies, or initiatives on the company's overall performance, competitive advantage, and market position, referencing relevant quotes or statements from the transcript.
+   - Use clear, concise, and jargon-free language, and employ transitional phrases and logical connectors to improve flow and coherence between paragraphs.
+
+4. For the Q&A section:
+   - Group related questions and answers together by theme or topic, following the outline structure.
+   - Provide a highly detailed account of each question and answer, including the full context, key points, and actionable insights that emerged from the discussion.
+   - Include any relevant data, statistics, examples, or verbatim quotes provided in the answers to support the key points and enhance understanding.
+   - Highlight any significant new information, insights, or decisions that emerged from the Q&A and discuss their potential implications for the company, citing specific quotes where relevant.
+
+5. Address information gaps:
+   - If critical information or statistics are missing or unclear in the transcript, mention this in the relevant section of the report, specifying the missing details or context.
+   - Provide suggestions or recommendations for obtaining the missing information or clarifying ambiguous points.
+
+6. Format the report using the outline structure, with main topics as headings (##), subtopics as subheadings (###), and appropriate bullet points or numbered lists for key information, especially statistics and numerical data. Use markdown formatting where applicable.
+
+7. Maintain an objective and neutral tone throughout the report, focusing on facts, data, key insights, and verbatim quotes from the transcript.
+
+8. After completing the draft, review the report to ensure that it is clear, coherent, and effectively conveys all the important aspects of the conference in great detail, with a strong emphasis on supporting data, quotes, and visually appealing presentations of statistics and numerical data.
+
+9. Revise the report as needed to improve clarity, coherence, and comprehensiveness, ensuring that all key aspects of the conference are adequately covered and supported by specific data, examples, quotes, and well-structured subheadings and lists.
+
+10. Proofread the final document for any errors in grammar, spelling, or formatting.
+
+Output:
+	[The data-rich conference report will be generated here, based on the input outline and following the specified steps and guidelines, incorporating extensive context, data, quotes, and supporting information from the transcript within each section, with a strong emphasis on including as many relevant statistics and numerical data points as possible, along with subheadings and lists for easy readability.]
