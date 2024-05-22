@@ -3,8 +3,8 @@ from langchain_anthropic import ChatAnthropic
 from langchain.chains.llm import LLMChain
 from langchain.chains.sequential import SimpleSequentialChain
 
-from utils import load_file, save_file
-import config
+from . import utils
+from . import config
 
 def load_prompts(prompt_template_path: str) -> PromptTemplate:
     """Load prompt templates from files."""
@@ -22,7 +22,7 @@ def load_llms(model: str, prompt: PromptTemplate) -> ChatAnthropic:
     chain = LLMChain(llm=llm, prompt=prompt)
     return chain
 
-def transcribe(transcript: str) -> str:
+def summarize_transcript(transcript: str) -> str:
     outline_prompt = load_prompts(config.outline_prompt_template_path)
     data_rich_prompt = load_prompts(config.data_rich_template_path)
     
@@ -47,5 +47,5 @@ def transcribe(transcript: str) -> str:
 
 
 if __name__ == "__main__":
-    transcript = load_file(config.transcript_path)
-    transcribe(transcript)
+    transcript = utils.load_file(config.transcript_path)
+    summarize_transcript(transcript)

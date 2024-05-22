@@ -1,8 +1,13 @@
-FROM python:3.11-bullseye
-WORKDIR /usr/src
-RUN apt upgrade -y && apt update -y
-RUN apt install -y ffmpeg
-COPY . /usr/src
-CMD ["pip", "install", "-r", "requirements.txt"]
+FROM python:3.10-slim
+
+WORKDIR /code 
+COPY ./requirements.txt /code/requirements.txt
+
+RUN apt update && apt upgrade -y && apt install ffmpeg -y
+RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
+
+COPY ./app /code/app
+
 EXPOSE 8080
-RUN python app.py
+
+CMD ["uvicorn", "app.main:app", "--host", " 0.0.0.0", "--port", "8080", "--reload"]
