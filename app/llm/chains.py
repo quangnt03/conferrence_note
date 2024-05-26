@@ -3,8 +3,8 @@ from langchain_anthropic import ChatAnthropic
 from langchain.chains.llm import LLMChain
 from langchain.chains.sequential import SimpleSequentialChain
 
-from . import utils
-from . import config
+import app.utils as utils
+import app.config as config
 
 def load_prompts(prompt_template_path: str) -> PromptTemplate:
     """Load prompt templates from files."""

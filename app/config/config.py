@@ -1,5 +1,6 @@
 # constants.py
 import os
+import assemblyai as aai
 from dotenv import find_dotenv, load_dotenv
 load_dotenv(find_dotenv())
 
@@ -16,6 +17,8 @@ datarich_model_engine = os.environ.get("DATARICH_MODEL")
 claude_api_key = os.environ.get("CLAUDE_API_KEY")
 max_token = os.environ.get('MAX_TOKEN')
 temperature = os.environ.get('TEMPERATURE')
+
+aai.settings.api_key = os.environ['AAI_API_KEY']
 
 # Prompt variables
 prompt_variable = {

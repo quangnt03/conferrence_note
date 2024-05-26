@@ -1,13 +1,11 @@
-import os
 from fastapi import FastAPI, UploadFile, Request, HTTPException
 from fastapi.responses import JSONResponse
 from json import JSONDecodeError
 import assemblyai as aai
-from app.transcription import process_audio_transcript
+from app.transcription import transcription
 from app.llm import chains
 
 app = FastAPI()
-aai.settings.api_key = os.environ['AAI_API_KEY']
 
 @app.post("/transcribe")
 async def summarize_transcript(audio_file: UploadFile = None):
@@ -18,7 +16,7 @@ async def summarize_transcript(audio_file: UploadFile = None):
         return HTTPException(400, "Only accept audio data")
     
     aai_client = aai.Transcriber()
-    transcript = process_audio_transcript(aai_client, audio_file)
+    transcript = transcription.process_audio_transcript(aai_client, audio_file)
         
     return JSONResponse(content={
         "content-type": audio_file.content_type,
